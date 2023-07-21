@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --first-color: #191825;
+    --second-color: #E384FF;
+    --third-color: #865DFF;
+
+    --hover-color: #222133;
+    --face-color: #22D4FD;
+
+    --main-font: 'Krona One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.had {
+    padding: 2% 0% 0% 14%;
+}
+
+.had__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.had__menu__link {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    font-weight: 600;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.bold-title {
+    color: var(--third-color);
+}
+
+.layout {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 4% 14%;
+    gap: 82px;
+}
+
+.textBox {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.textBox__tittle {
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+}
+
+.textBox__content {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+}
+
+.textBox__content__curriculo {
+    font-size: 1.25rem;
+    font-family: var(--second-font);
+    padding: 1.5%;
+
+}
+
+
+.layout__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.layout__button__subtitle {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.layout__button__link {
+    border: 2px solid var(--third-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.25rem;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--second-color);
+    font-family: var(--main-font);
+    font-weight: 600;
+
+}
+
+.layout__button__link:hover {
+    background-color: var(--hover-color);
+    font-size: 1.5rem;
+}
+
+.photo__face {
+    width: 31px;
+    height: 31px;
+    background-color: var(--first-color);
+    border: 2px solid var(--face-color);
+    border-radius: 8px;
+}
+
+
+.photo {
+    width: 50%;
+    border-radius: 16px;
+}
+
+
+.footer {
+
+    text-align: center;
+    color: var(--hover-color);
+    background-color: var(--third-color);
+    padding: 23px;
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .had {
+        padding: 10%;
+    }
+
+    .had__menu {
+        justify-content: center;
+    }
+
+    .layout {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .textBox {
+        width: auto;
+    }
+}
