@@ -30,7 +30,7 @@ body {
 
 .had__menu {
     display: flex;
-    gap: 80px;
+    gap: 2.5rem;
 }
 
 .had__menu__link {
@@ -39,6 +39,10 @@ body {
     font-weight: 600;
     color: var(--third-color);
     text-decoration: none;
+}
+
+.had__menu__link:hover {
+    color: #5524e9;
 }
 
 .bold-title {
